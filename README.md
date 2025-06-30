@@ -141,8 +141,3 @@ npx hardhat run --network citrea scripts/deploy.js
 > *Citrea-lend redefines Bitcoin in the DeFi era. Lend securely. Borrow freely. Own your finance.*
 
 ```
-
----
-
-Let me know if you’d like this exported as a downloadable file or auto-filled with real GitHub links and contract addresses.
-```
