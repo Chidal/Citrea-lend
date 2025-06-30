@@ -3,8 +3,7 @@
 Welcome to **Citrea-lend**, a cutting-edge decentralized finance (DeFi) money market built on Citrea’s zk-rollup technology. This project unlocks Bitcoin’s potential by allowing users to lend BTC for yield or use it as collateral for loans in other assets, all secured by smart contracts and powered by scalability magic.
 
 Citrea-lend showcases innovative Bitcoin use cases with a sleek React frontend, robust Solidity smart contracts, and seamless integration with Citrea’s Bitcoin Light Client.
-
-- **Website**: [Coming Soon](#)  
+ 
 - **Testnet**: Citrea Testnet (Chain ID: 5115)  
 - **License**: MIT
 
