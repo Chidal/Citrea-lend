@@ -1,16 +1,8 @@
-Here's your content structured and formatted as a `README.md` file, ready to be used in your GitHub repository or project documentation:
-
----
-
-````markdown
 # Citrea-lend: Bitcoin-Powered DeFi Money Market
-
-![Citrea-lend Logo](https://via.placeholder.com/150?text=Citrea-lend+Logo)  
-*Empower Bitcoin with DeFi: Lend, Borrow, and Thrive!*
 
 Welcome to **Citrea-lend**, a cutting-edge decentralized finance (DeFi) money market built on Citrea’s zk-rollup technology. This project unlocks Bitcoin’s potential by allowing users to lend BTC for yield or use it as collateral for loans in other assets, all secured by smart contracts and powered by scalability magic.
 
-Developed as part of the **Citrea WaveHack**, Citrea-lend showcases innovative Bitcoin use cases with a sleek React frontend, robust Solidity smart contracts, and seamless integration with Citrea’s Bitcoin Light Client.
+Citrea-lend showcases innovative Bitcoin use cases with a sleek React frontend, robust Solidity smart contracts, and seamless integration with Citrea’s Bitcoin Light Client.
 
 - **Website**: [Coming Soon](#)  
 - **Testnet**: Citrea Testnet (Chain ID: 5115)  
@@ -81,7 +73,7 @@ Bitcoin, despite being the most valuable crypto asset, lacks native support for 
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/citrea-lend.git
+git clone https://github.com/chidal/citrea-lend.git
 cd citrea-lend
 npm install
 ````
@@ -146,31 +138,6 @@ npx hardhat run --network citrea scripts/deploy.js
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributors of all skill levels!
-
-1. Fork the repo
-2. Create a feature branch
-3. Submit a PR with a clear description
-
-Join us on [X](#) or [Discord](#) for updates and discussions!
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙌 Acknowledgments
-
-* Huge thanks to the **Citrea** team for enabling zkEVMs on Bitcoin.
-* Shoutout to the **WaveHack** community for their incredible feedback and support.
-* And of course, cheers to **late-night coffee** ☕ for fueling this build!
-
----
 
 > *Citrea-lend redefines Bitcoin in the DeFi era. Lend securely. Borrow freely. Own your finance.*
 
