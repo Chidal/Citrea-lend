@@ -9,7 +9,7 @@ Citrea-lend showcases innovative Bitcoin use cases with a sleek React frontend, 
 
 ---
 
-## 🚀 What It Does
+## What It Does
 
 Citrea-lend transforms Bitcoin into a dynamic DeFi asset, enabling users to:
 
@@ -22,7 +22,7 @@ This non-custodial platform reimagines Bitcoin as the heartbeat of DeFi, blendin
 
 ---
 
-## 🧩 The Problem It Solves
+## The Problem It Solves
 
 Bitcoin, despite being the most valuable crypto asset, lacks native support for smart contracts, making DeFi use cases challenging. Wrapping BTC on other chains adds trust risks and inefficiencies.
 
@@ -30,7 +30,7 @@ Bitcoin, despite being the most valuable crypto asset, lacks native support for 
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Frontend**: React, Tailwind CSS  
 - **Blockchain**: Citrea zkEVM Testnet (Chain ID: 5115)  
@@ -41,7 +41,7 @@ Bitcoin, despite being the most valuable crypto asset, lacks native support for 
 
 ---
 
-## 🏗️ How We Built It
+## How We Built It
 
 1. **Smart Contract Development**  
    - Created `LendingPool`, `LoanManager`, `cBTC`, and `PriceOracle` contracts.  
@@ -60,7 +60,7 @@ Bitcoin, despite being the most valuable crypto asset, lacks native support for 
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -88,7 +88,7 @@ LENDING_POOL_ADDRESS=your_deployed_lending_pool_address
 LOAN_MANAGER_ADDRESS=your_deployed_loan_manager_address
 ```
 
-> ⚠️ **Keep your `.env` file private and never commit it!**
+> **Keep your `.env` file private and never commit it!**
 
 ### Running the App
 
@@ -108,7 +108,7 @@ npx hardhat run --network citrea scripts/deploy.js
 
 ---
 
-## 🧪 Challenges We Faced
+## Challenges We Faced
 
 * **zkEVM Quirks**: Adapting to Citrea’s Shanghai-based zkEVM required debugging edge-case opcodes.
 * **BTC Verification**: Integrating and syncing the Light Client for onchain BTC validation was non-trivial.
@@ -117,7 +117,7 @@ npx hardhat run --network citrea scripts/deploy.js
 
 ---
 
-## 📚 What We Learned
+## What We Learned
 
 * **zk-Rollups are Game-Changers** for Bitcoin scalability and smart contract compatibility.
 * **Trustlessness is Achievable** using Bitcoin Light Clients instead of wrapped BTC.
@@ -126,7 +126,7 @@ npx hardhat run --network citrea scripts/deploy.js
 
 ---
 
-## 🔮 What's Next for Citrea-lend
+## What's Next for Citrea-lend
 
 * ✅ Replace mock `PriceOracle` with **Chainlink price feeds**
 * ✅ Add **ETH, USDC, and additional BTC-backed assets**
