@@ -1,70 +1,182 @@
-# Getting Started with Create React App
+Here's your content structured and formatted as a `README.md` file, ready to be used in your GitHub repository or project documentation:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+````markdown
+# Citrea-lend: Bitcoin-Powered DeFi Money Market
 
-In the project directory, you can run:
+![Citrea-lend Logo](https://via.placeholder.com/150?text=Citrea-lend+Logo)  
+*Empower Bitcoin with DeFi: Lend, Borrow, and Thrive!*
 
-### `npm start`
+Welcome to **Citrea-lend**, a cutting-edge decentralized finance (DeFi) money market built on Citrea’s zk-rollup technology. This project unlocks Bitcoin’s potential by allowing users to lend BTC for yield or use it as collateral for loans in other assets, all secured by smart contracts and powered by scalability magic.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Developed as part of the **Citrea WaveHack**, Citrea-lend showcases innovative Bitcoin use cases with a sleek React frontend, robust Solidity smart contracts, and seamless integration with Citrea’s Bitcoin Light Client.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Website**: [Coming Soon](#)  
+- **Testnet**: Citrea Testnet (Chain ID: 5115)  
+- **License**: MIT
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 What It Does
 
-### `npm run build`
+Citrea-lend transforms Bitcoin into a dynamic DeFi asset, enabling users to:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Lend BTC**: Deposit BTC to earn competitive yields based on market demand.  
+- **Borrow Against BTC**: Use BTC as collateral to borrow assets like USDC.  
+- **Automated Management**: Smart contracts handle liquidations and adjust interest rates dynamically.  
+- **Scalable & Low-Cost**: Citrea’s zk-rollups ensure high throughput and minimal fees.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This non-custodial platform reimagines Bitcoin as the heartbeat of DeFi, blending security, efficiency, and accessibility.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🧩 The Problem It Solves
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Bitcoin, despite being the most valuable crypto asset, lacks native support for smart contracts, making DeFi use cases challenging. Wrapping BTC on other chains adds trust risks and inefficiencies.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Citrea-lend** bridges this gap using Citrea’s zkEVM technology to enable Bitcoin-native DeFi without wrapping or custodial risks. It tackles scalability, trustlessness, and DeFi utility — all at once.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🛠️ Technologies Used
 
-## Learn More
+- **Frontend**: React, Tailwind CSS  
+- **Blockchain**: Citrea zkEVM Testnet (Chain ID: 5115)  
+- **Smart Contracts**: Solidity (Hardhat framework)  
+- **Wallet Integration**: Ethers.js, MetaMask  
+- **BTC Verification**: Citrea Bitcoin Light Client  
+- **Testing**: Hardhat, Chai/Mocha
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🏗️ How We Built It
 
-### Code Splitting
+1. **Smart Contract Development**  
+   - Created `LendingPool`, `LoanManager`, `cBTC`, and `PriceOracle` contracts.  
+   - Deployed to the Citrea Testnet using Hardhat.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Frontend App**  
+   - Built with React + Tailwind CSS for modern UI/UX.  
+   - Integrated MetaMask and Ethers.js for contract interaction.
 
-### Analyzing the Bundle Size
+3. **Testing & Integration**  
+   - Simulated edge cases (like liquidations) using Hardhat tests.  
+   - Verified BTC deposits using Citrea’s Bitcoin Light Client.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Launch Timeline**  
+   - Project launched: **June 29, 2025 at 04:14 PM WAT**
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ⚙️ Getting Started
 
-### Advanced Configuration
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Node.js (v14+)  
+- MetaMask Wallet  
+- Citrea Testnet (Chain ID: 5115, RPC: `https://rpc.testnet.citrea.xyz`)  
+- cBTC from [Citrea Faucet](#)
 
-### Deployment
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+git clone https://github.com/your-username/citrea-lend.git
+cd citrea-lend
+npm install
+````
 
-### `npm run build` fails to minify
+### Environment Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Create a `.env` file:
+
+```env
+PRIVATE_KEY=your_metamask_private_key
+CITREA_RPC_URL=https://rpc.testnet.citrea.xyz
+LENDING_POOL_ADDRESS=your_deployed_lending_pool_address
+LOAN_MANAGER_ADDRESS=your_deployed_loan_manager_address
+```
+
+> ⚠️ **Keep your `.env` file private and never commit it!**
+
+### Running the App
+
+Start the frontend:
+
+```bash
+npm start
+```
+
+Visit [http://localhost:3000](http://localhost:3000)
+
+### Deploying Contracts
+
+```bash
+npx hardhat run --network citrea scripts/deploy.js
+```
+
+---
+
+## 🧪 Challenges We Faced
+
+* **zkEVM Quirks**: Adapting to Citrea’s Shanghai-based zkEVM required debugging edge-case opcodes.
+* **BTC Verification**: Integrating and syncing the Light Client for onchain BTC validation was non-trivial.
+* **Liquidation Edge Cases**: Real-time volatility created unexpected state changes that required fine-tuning.
+* **Frontend ↔ Blockchain Sync**: Ensuring UI responsiveness with async blockchain events required custom hooks.
+
+---
+
+## 📚 What We Learned
+
+* **zk-Rollups are Game-Changers** for Bitcoin scalability and smart contract compatibility.
+* **Trustlessness is Achievable** using Bitcoin Light Clients instead of wrapped BTC.
+* **Frontend Polish Matters** — Tailwind and user-focused UI dramatically improved UX.
+* **Testing Is Everything** — Simulating volatile markets built confidence in the system’s resilience.
+
+---
+
+## 🔮 What's Next for Citrea-lend
+
+* ✅ Replace mock `PriceOracle` with **Chainlink price feeds**
+* ✅ Add **ETH, USDC, and additional BTC-backed assets**
+* 🚀 Integrate **Schnorr signature verification** via Citrea precompile
+* 📢 Launch **community governance (DAO)** for parameter control
+* 🌉 Build **Citrea-Swap** for atomic BTC swaps (Wave 2)
+* 🧑‍🤝‍🧑 Explore **Citrea-Orbit** for BTC-powered social finance (Wave 3)
+
+---
+
+## 🤝 Contributing
+
+We welcome contributors of all skill levels!
+
+1. Fork the repo
+2. Create a feature branch
+3. Submit a PR with a clear description
+
+Join us on [X](#) or [Discord](#) for updates and discussions!
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙌 Acknowledgments
+
+* Huge thanks to the **Citrea** team for enabling zkEVMs on Bitcoin.
+* Shoutout to the **WaveHack** community for their incredible feedback and support.
+* And of course, cheers to **late-night coffee** ☕ for fueling this build!
+
+---
+
+> *Citrea-lend redefines Bitcoin in the DeFi era. Lend securely. Borrow freely. Own your finance.*
+
+```
+
+---
+
+Let me know if you’d like this exported as a downloadable file or auto-filled with real GitHub links and contract addresses.
+```
