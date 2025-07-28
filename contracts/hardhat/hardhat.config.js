@@ -1,12 +1,15 @@
-require("@nomicfoundation/hardhat-toolbox");
+import { HardhatUserConfig } from "hardhat/config";
+import "@nomicfoundation/hardhat-toolbox";
 
-module.exports = {
-  solidity: "0.8.25",
+const config: HardhatUserConfig = {
+  solidity: "0.8.0",
   networks: {
     citrea: {
-      url: process.env.CITREA_RPC_URL || "https://rpc.testnet.citrea.xyz",
+      url: "https://rpc.testnet.citrea.xyz",
       chainId: 5115,
-      accounts: [process.env.PRIVATE_KEY],
+      accounts: ["YOUR_PRIVATE_KEY"],
     },
   },
 };
+
+export default config;
