@@ -1,14 +1,20 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
+// Define the shape of the transaction data
+interface Transaction {
+  description: string;
+  amount: number;
+}
+
 const Profile: React.FC = () => {
-  const [transactions, setTransactions] = useState<any[]>([]);
+  const [transactions, setTransactions] = useState<Transaction[]>([]);
 
   useEffect(() => {
     // Mock Blocksense API call
-    axios.get('http://localhost:5000/transactions')
-      .then(response => setTransactions(response.data))
-      .catch(error => console.error('Error fetching transactions:', error));
+    axios.get<{ data: Transaction[] }>('http://localhost:5000/transactions')
+      .then(response => setTransactions(response.data.data)) // Extract the data array
+      .catch((error: Error) => console.error('Error fetching transactions:', error));
   }, []);
 
   return (

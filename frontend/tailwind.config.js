@@ -4,12 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1a202c',
-        secondary: '#00ff00',
-        accent: '#4a5568',
+        primary: '#1E1E1E',
+        secondary: '#FF6200',
+        accent: '#FFFFFF',
+        highlight: '#D3D3D3',
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(circle, #1a202c 0%, #000000 100%)',
+        'gradient-dark': 'linear-gradient(to bottom, #1E1E1E, #000000)',
       },
     },
   },
