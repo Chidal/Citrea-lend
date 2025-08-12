@@ -1,19 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
 import Home from './pages/Home';
-import Profile from './pages/profile'; // Updated to match file name case
-import Footer from './components/Footer';
+import RewardPage from './pages/RewardPage';
+import AccountingPage from './pages/AccountingPage';
+import SavingsPage from './pages/SavingsPage';
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gradient-dark text-accent">
-        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/reward" element={<RewardPage />} />
+          <Route path="/accounting" element={<AccountingPage />} />
+          <Route path="/savings" element={<SavingsPage />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
